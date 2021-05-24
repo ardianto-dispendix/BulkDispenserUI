@@ -29,27 +29,6 @@ class MainScreen extends StatelessWidget {
                             _drawerKey.currentState.openDrawer();
                           },
                         ),
-                        // Stack(
-                        //   alignment: Alignment.center,
-                        //   children: <Widget>[
-                        //     IconButton(
-                        //       icon: Icon(Icons.mail_outline),
-                        //       onPressed: _onClickNotification,
-                        //     ),
-                        //     Positioned(
-                        //       top: 12.0,
-                        //       right: 10.0,
-                        //       width: 10.0,
-                        //       height: 10.0,
-                        //       child: Container(
-                        //         decoration: BoxDecoration(
-                        //           shape: BoxShape.circle,
-                        //           color: AppColors.notification,
-                        //         ),
-                        //       ),
-                        //     )
-                        //   ],
-                        // ),
                         Expanded(
                           child: Center(
                               child: Text(
@@ -69,13 +48,7 @@ class MainScreen extends StatelessWidget {
                 body: SafeArea(
                     child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SideMenu(),
-                    Expanded(
-                      child: MainArea(state),
-                      flex: 5,
-                    )
-                  ],
+                  children: [SideMenu(), MainArea(state)],
                 ))),
       ),
     );
