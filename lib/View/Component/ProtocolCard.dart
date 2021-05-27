@@ -8,62 +8,68 @@ class ProtocolCard extends StatelessWidget {
 
   final ExplorerProtocolInfo info;
   TextStyle style = GoogleFonts.roboto(
-      color: Colors.black, fontWeight: FontWeight.normal, fontSize: 18);
+      color: Colors.black, fontWeight: FontWeight.normal, fontSize: 10);
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-        color: Colors.white,
-        elevation: 8,
-        shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(Radius.circular(6))),
-        child: Container(
-          padding: EdgeInsets.only(top: 10),
-          width: 260,
-          height: 120,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              Row(
-                children: [
-                  Icon(
-                    MdiIcons.layers,
-                    size: 90,
-                    color: Colors.grey[700],
-                  ),
-                  SizedBox(
-                    width: 30,
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Text(
-                        '${info.protocolName}',
-                        style: style,
-                      ),
-                      Text(
-                        '${info.plateType}',
-                        style: style,
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                    ],
-                  )
-                ],
-              ),
-              Text(
-                'Last update: ${info.lastUpdate}',
-                style: GoogleFonts.roboto(
-                    color: Colors.grey[700],
-                    fontWeight: FontWeight.normal,
-                    fontSize: 16),
-              )
-            ],
-          ),
-        ));
+    return InkWell(
+      onTap: () {},
+      child: Card(
+          color: Colors.white,
+          elevation: 8,
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(6))),
+          child: Container(
+            padding: EdgeInsets.only(top: 10),
+            width: 150,
+            height: 75,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Row(
+                  children: [
+                    Icon(
+                      MdiIcons.layers,
+                      size: 40,
+                      color: Colors.grey[700],
+                    ),
+                    SizedBox(
+                      width: 30,
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          '${info.protocolName}',
+                          style: style,
+                        ),
+                        Text(
+                          '${info.plateType}',
+                          style: style,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+                Text(
+                  'Last update: ${info.lastUpdate}',
+                  style: GoogleFonts.roboto(
+                      color: Colors.grey[700],
+                      fontWeight: FontWeight.normal,
+                      fontSize: 10),
+                ),
+                SizedBox(
+                  width: 5,
+                ),
+              ],
+            ),
+          )),
+    );
   }
 }

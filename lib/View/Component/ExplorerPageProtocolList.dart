@@ -13,32 +13,61 @@ class ExplorerPageProtocolList extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             SizedBox(
-              height: 70,
+              height: 50,
             ),
-            Text("Recent Protocol",
+            Text("Protocol List",
                 textAlign: TextAlign.start,
                 style: GoogleFonts.roboto(
                     color: Colors.black,
                     fontWeight: FontWeight.normal,
-                    fontSize: 30)),
-            Divider(
-              height: 20,
-              thickness: 5,
-              indent: 20,
-              endIndent: 20,
-              color: Colors.grey[800],
+                    fontSize: 14)),
+            SizedBox(
+              height: 3,
             ),
             Container(
-              height: 150,
-              width: 400,
+                height: 2,
+                decoration: new BoxDecoration(
+                  border: Border(
+                    top: BorderSide(width: 1.0, color: Colors.grey),
+                    left: BorderSide(width: 1.0, color: Colors.grey),
+                    right: BorderSide(width: 200.0, color: Colors.grey),
+                    bottom: BorderSide(width: 1.0, color: Colors.grey),
+                  ),
+                )),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              height: 85,
+              width: 700,
               child: ListView(
                 children: [
                   ProtocolCard(new ExplorerProtocolInfo(
                       'Dispense_1', '96-well-plate', '1 day ago')),
                   ProtocolCard(new ExplorerProtocolInfo(
                       'Dispense_2', '96-well-plate', '2 days ago')),
+                  ProtocolCard(new ExplorerProtocolInfo(
+                      'Dispense_2', '96-well-plate', '2 days ago')),
+                  ProtocolCard(new ExplorerProtocolInfo(
+                      'Dispense_2', '96-well-plate', '2 days ago')),
+                  ProtocolCard(new ExplorerProtocolInfo(
+                      'Dispense_2', '96-well-plate', '2 days ago')),
+                  ProtocolCard(new ExplorerProtocolInfo(
+                      'Dispense_2', '96-well-plate', '2 days ago')),
+                  ProtocolCard(new ExplorerProtocolInfo(
+                      'Dispense_2', '96-well-plate', '2 days ago')),
+                  ProtocolCard(new ExplorerProtocolInfo(
+                      'Dispense_2', '96-well-plate', '2 days ago')),
+                  ProtocolCard(new ExplorerProtocolInfo(
+                      'Dispense_2', '96-well-plate', '2 days ago')),
+                  ProtocolCard(new ExplorerProtocolInfo(
+                      'Dispense_2', '96-well-plate', '2 days ago')),
+                  ProtocolCard(new ExplorerProtocolInfo(
+                      'Dispense_2', '96-well-plate', '2 days ago')),
+                  ProtocolCard(new ExplorerProtocolInfo(
+                      'Dispense_2', '96-well-plate', '2 days ago')),
                 ],
-                padding: const EdgeInsets.all(8),
+                padding: const EdgeInsets.all(3),
                 scrollDirection: Axis.horizontal,
                 shrinkWrap: true,
               ),

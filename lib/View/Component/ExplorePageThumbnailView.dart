@@ -1,3 +1,4 @@
+import 'package:bulk_dispenser/View/Component/ExplorerPageGetStarted.dart';
 import 'package:bulk_dispenser/View/Component/ExplorerPageProtocolList.dart';
 import 'package:bulk_dispenser/View/Component/ExplorerPageRecent.dart';
 import 'package:flutter/material.dart';
@@ -10,13 +11,13 @@ class ExplorePageThumbnailView extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(
-          height: 50,
+          height: 10,
         ),
         Row(
           children: [
-            ExplorerPageRecent(),
+            ExplorerPageGetStarted(),
             SizedBox(
-              width: 200,
+              width: 80,
             ),
             ExplorerPageRecent(),
           ],

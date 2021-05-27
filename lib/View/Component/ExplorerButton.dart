@@ -14,16 +14,15 @@ class ExplorerButton extends StatelessWidget {
       children: [
         SizedBox(
           width: 20,
-          height: 10,
         ),
         Material(
           child: Ink(
-            width: 65,
-            height: 51,
+            width: 35,
+            height: 31,
             decoration: const ShapeDecoration(
               color: mainBlueColor,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(6))),
+                  borderRadius: BorderRadius.all(Radius.circular(3))),
             ),
             child: IconButton(tooltip: toolTip, icon: icon, onPressed: pressed),
           ),

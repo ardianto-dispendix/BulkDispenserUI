@@ -35,43 +35,41 @@ class ExplorerPage extends StatelessWidget {
                       style: GoogleFonts.roboto(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 30)),
+                          fontSize: 14)),
                   Text('Find your protocol here',
                       textAlign: TextAlign.start,
                       style: GoogleFonts.roboto(
                           color: Colors.grey[700],
                           fontWeight: FontWeight.normal,
-                          fontSize: 14))
+                          fontSize: 10))
                 ],
               ),
               SizedBox(
-                width: 650,
+                width: 280,
               ),
               ExplorerButton(
                   'edit',
-                  Icon(
-                    MdiIcons.viewList,
-                    color: Colors.white,
-                  ),
+                  Icon(MdiIcons.formatListBulleted,
+                      color: Colors.white, size: 13),
                   () {}),
               ExplorerButton(
                   'clone',
-                  Icon(MdiIcons.contentCopy, color: Colors.white, size: 24),
+                  Icon(MdiIcons.contentCopy, color: Colors.white, size: 13),
                   () {}),
               ExplorerButton('remove',
-                  Icon(MdiIcons.delete, color: Colors.white, size: 24), () {}),
+                  Icon(MdiIcons.delete, color: Colors.white, size: 13), () {}),
               ExplorerButton(
                   'rename',
-                  Icon(MdiIcons.renameBox, color: Colors.white, size: 24),
+                  Icon(MdiIcons.renameBox, color: Colors.white, size: 13),
                   () {}),
               ExplorerButton('run',
-                  Icon(MdiIcons.play, color: Colors.white, size: 24), () {}),
+                  Icon(MdiIcons.play, color: Colors.white, size: 13), () {}),
             ],
           ),
           Row(
             children: [
               SizedBox(
-                width: 40,
+                width: 10,
               ),
               ExplorePageThumbnailView(),
             ],
