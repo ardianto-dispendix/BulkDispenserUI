@@ -1,4 +1,6 @@
+import 'package:bulk_dispenser/View/Component/ExplorePageThumbnailView.dart';
 import 'package:bulk_dispenser/View/Component/ExplorerButton.dart';
+import 'package:bulk_dispenser/View/Component/ExplorerPageRecent.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -20,14 +22,12 @@ class ExplorerPage extends StatelessWidget {
             children: [
               SizedBox(
                 width: 10,
-                height: 10,
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
-                    width: 15,
                     height: 15,
                   ),
                   Text("Ardianto nugroho's protocol",
@@ -46,7 +46,6 @@ class ExplorerPage extends StatelessWidget {
               ),
               SizedBox(
                 width: 650,
-                height: 10,
               ),
               ExplorerButton(
                   'edit',
@@ -68,7 +67,15 @@ class ExplorerPage extends StatelessWidget {
               ExplorerButton('run',
                   Icon(MdiIcons.play, color: Colors.white, size: 24), () {}),
             ],
-          )
+          ),
+          Row(
+            children: [
+              SizedBox(
+                width: 40,
+              ),
+              ExplorePageThumbnailView(),
+            ],
+          ),
         ],
       ),
     );

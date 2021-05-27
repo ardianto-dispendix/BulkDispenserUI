@@ -21,7 +21,7 @@ class ExplorerButton extends StatelessWidget {
             width: 65,
             height: 51,
             decoration: const ShapeDecoration(
-              color: mainBlueCOlor,
+              color: mainBlueColor,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(6))),
             ),
